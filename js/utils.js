@@ -14,11 +14,11 @@ function determineWinner({ player, enemy, timerId }) {
   clearTimeout(timerId)
   document.querySelector('#displayText').style.display = 'flex'
   if (player.health === enemy.health) {
-    document.querySelector('#displayText').innerHTML = 'Tie'
+    document.querySelector('#displayText').innerHTML = 'Empate'
   } else if (player.health > enemy.health) {
-    document.querySelector('#displayText').innerHTML = 'Player 1 Wins'
+    document.querySelector('#displayText').innerHTML = 'Jogador 1 Ganhou!'
   } else if (player.health < enemy.health) {
-    document.querySelector('#displayText').innerHTML = 'Player 2 Wins'
+    document.querySelector('#displayText').innerHTML = 'Jogador 2 Ganhou!'
   }
 }
 
